@@ -20,8 +20,8 @@ This pipeline uses `lightkurve` and `astropy` to process TESS light curves, elim
 
 | Target | Object Type | Detected Period | Derived Radius | Key Feature |
 | :--- | :--- | :--- | :--- | :--- |
-| **WASP-18 b** | Confirmed Hot Jupiter | ~0.9415 days | $1.08\text{ }R_J$ | Limb-darkened model correction |
-| **TIC 261136679** | Detected Candidate | ~6.2661 days | ~$0.07\text{ }R_J$ | Signal extracted via phase binning |
+| **WASP-18 b** | Confirmed Hot Jupiter | ~0.9415 days | 1.08 R_J | Limb-darkened model correction |
+| **TIC 261136679** | Detected Candidate | ~6.2661 days | ~0.07 R_J | Signal extracted via phase binning |
 
 ---
 
