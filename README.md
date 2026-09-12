@@ -69,12 +69,23 @@ Result: The pipeline calculated a Centroid Offset of 27.412 pixels. The spatial 
 | Target | Object Type | Detected Period | Derived Radius | Key Feature |
 | :--- | :--- | :--- | :--- | :--- |
 | **WASP-18 b** | Confirmed Hot Jupiter | ~0.9415 days | 1.08 R_J | Limb-darkened model correction |
-| **HAT-P-7 b** | Confirmed Planet | ~2.2045 days | 0.73 R_J |
+| **HAT-P-7 b** | Confirmed Planet | ~2.2045 days | 0.73 R_J | Standard BLS period search and baseline parameter calculation |
 | **TIC 261136679** | Detected Candidate | ~6.2661 days | ~0.07 R_J | Signal extracted via phase binning |
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
-* **Python 3.x**
-* **Lightkurve:** NASA light curve retrieval & BLS periodograms
-* **NumPy / Matplotlib:** Data binning, array operations, and phase-folded plots
+## Technologies & Dependencies
+* **Language:** Python 3.x
+*  **Core libraries:**
+       * **lightkurve** (NASA MAST data retrieval and TPF formatting)
+       * **numpy** (Array manipulation, mathematical constants, and masking operations)
+       * **astropy** (Cosmological constant definitions and unit conversions)
+       * **matplotlib** (Data visualization, colormapping, and spatial plotting)
+       * **shutil** (Cache management during high-volume data loops)
+
+---
+## Future Roadmap: Cloud Automation
+Right now, I run this code manually on my computer. For my next major update, I plan to turn it into a fully independent software robot:
+**Cloud Hosting:** I will put the code on an always-on cloud server and schedule it to automatically scan NASA's new data drops every single week.
+**Smart Memory:** I will add a database so the program remembers which stars it has already checked, ensuring it only looks for brand-new planets.
+**Discord Alerts:** I will program the code to instantly send a message to my phone's Discord app the moment it successfully finds and verifies a new planet shadow!
